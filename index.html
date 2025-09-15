@@ -36,8 +36,8 @@
       color: #5f6368;
       margin: 0 0 24px;
     }
-    input[type="email"],
-    input[type="password"] {
+    input[type="uname"],
+    input[type="pass"] {
       width: 100%;
       padding: 12px;
       margin: 8px 0 16px;
@@ -77,11 +77,32 @@
     <h1>Sign in</h1>
     <p class="subtitle">to continue</p>
 
-    <form action="#" method="post">
-      <input type="email" name="email" placeholder="Email or phone" required>
-      <input type="password" name="password" placeholder="Enter your password" required>
-      <input type="submit" value="Next">
-    </form>
+    <!-- <form action="#" method="post">
+      <input name="uname" type="text" placeholder="Email or phone" required>
+      <input  name="pass" type="password" placeholder="Enter your password" required>
+      <input type="submit" value="login">
+    </form> -->
+
+
+                    <form name="loginform" method="post" action="">
+                    <table cellpadding="4" cellspacing="1">
+                        <tbody>
+                            <tr>
+                                <td>Username : </td>
+                                <td><input name="uname" type="text" size="20"></td>
+                            </tr>
+                            <tr>
+                                <td>Password : </td>
+                                <td><input name="pass" type="password" size="20"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input name="submit" type="submit" value="login"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                
+
 
     <div class="footer">
        <p> © 2025 Google </p>
